@@ -1,12 +1,12 @@
-interface Image {
-  _id: string;
-  src: string;
-  fileType: string;
-  fileSize: number;
-  fileName: string;
-  width: number;
-  height: number;
-}
+// interface Image {
+//   _id: string;
+//   src: string;
+//   fileType: string;
+//   fileSize: number;
+//   fileName: string;
+//   width: number;
+//   height: number;
+// }
 
 export interface AboutMe {
   name: string;
