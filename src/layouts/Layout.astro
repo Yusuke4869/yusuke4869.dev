@@ -1,46 +1,138 @@
 ---
+import Header from "~/components/Header.astro";
+
 interface Props {
   title: string;
+  description: string;
+  imageUrl: string;
 }
 
-const { title } = Astro.props;
+const { title, description, imageUrl } = Astro.props;
+const year = new Date().getFullYear();
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="ja">
   <head>
     <meta charset="UTF-8" />
-    <meta name="description" content="Astro description" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="generator" content={Astro.generator} />
+    <link rel="icon" href="https://github.com/yusuke4869.png" />
     <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={imageUrl} />
   </head>
-  <body>
-    <slot />
+  <body
+    class="mx-auto flex min-h-screen max-w-screen-lg flex-col bg-slate-300 text-slate-900 dark:bg-slate-700 dark:text-slate-50"
+  >
+    <Header />
+    <main class="mx-2 mx-auto w-11/12 flex-1 md:mx-5">
+      <slot />
+    </main>
+    <footer class="my-4">
+      <p class="text-center text-sm">Copyright © {year} Yusuke4869</p>
+    </footer>
+    <script is:inline>
+      if (
+        localStorage.theme === "dark" ||
+        (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)
+      )
+        document.documentElement.classList.add("dark");
+      else document.documentElement.classList.remove("dark");
+    </script>
   </body>
 </html>
 <style is:global>
-  :root {
-    --accent: 136, 58, 234;
-    --accent-light: 224, 204, 250;
-    --accent-dark: 49, 10, 101;
-    --accent-gradient: linear-gradient(45deg, rgb(var(--accent)), rgb(var(--accent-light)) 30%, white 60%);
+  .markdown {
+    @apply break-words leading-normal;
   }
-  html {
-    font-family: system-ui, sans-serif;
-    background: #13151a;
-    background-size: 224px;
+
+  .markdown > * + * {
+    @apply mb-4 mt-0;
   }
-  code {
-    font-family:
-      Menlo,
-      Monaco,
-      Lucida Console,
-      Liberation Mono,
-      DejaVu Sans Mono,
-      Bitstream Vera Sans Mono,
-      Courier New,
-      monospace;
+
+  .markdown li + li {
+    @apply mt-1;
+  }
+
+  .markdown li > p + p {
+    @apply mt-6;
+  }
+
+  .markdown strong {
+    @apply font-semibold;
+  }
+
+  .markdown a {
+    @apply font-semibold text-blue-600;
+  }
+
+  .markdown strong a {
+    @apply font-bold;
+  }
+
+  .markdown h1 {
+    @apply mb-4 mt-6 border-b border-slate-900 pb-2 text-4xl font-semibold leading-tight dark:border-slate-50;
+  }
+
+  .markdown h2 {
+    @apply mb-4 mt-6 border-b border-slate-900 pb-2 text-2xl font-semibold leading-tight dark:border-slate-50;
+  }
+
+  .markdown h3 {
+    @apply mb-4 mt-6 text-lg font-semibold leading-snug;
+  }
+
+  .markdown h4 {
+    @apply mb-4 mt-6 text-base font-semibold leading-none;
+  }
+
+  .markdown h5 {
+    @apply mb-4 mt-6 text-sm font-semibold leading-tight;
+  }
+
+  .markdown h6 {
+    @apply mb-4 mt-6 text-sm font-semibold leading-tight text-gray-600;
+  }
+
+  .markdown blockquote {
+    @apply border-l-4 border-gray-300 pl-4 pr-4 text-base text-gray-600;
+  }
+
+  .markdown code {
+    @apply inline rounded bg-gray-200 px-1 py-0.5 font-mono text-sm text-rose-500;
+  }
+
+  .markdown pre {
+    @apply rounded bg-gray-100 p-4;
+  }
+
+  .markdown pre code {
+    @apply block overflow-visible rounded-none bg-transparent p-0;
+  }
+
+  .markdown ul {
+    @apply list-disc pl-8 text-base;
+  }
+
+  .markdown ol {
+    @apply list-decimal pl-8 text-base;
+  }
+
+  .markdown kbd {
+    @apply inline-block rounded border px-1 py-0.5 align-middle font-mono text-xs font-normal shadow;
+  }
+
+  .markdown table {
+    @apply border-gray-600 text-base;
+  }
+
+  .markdown th {
+    @apply border px-3 py-1;
+  }
+
+  .markdown td {
+    @apply border px-3 py-1;
   }
 </style>
