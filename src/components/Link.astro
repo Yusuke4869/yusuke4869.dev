@@ -1,0 +1,21 @@
+---
+import { Icon } from "astro-icon";
+
+interface Props {
+  name: string;
+  url: string;
+  iconName: string | undefined;
+}
+
+const { name, url, iconName } = Astro.props;
+---
+
+<a
+  href={url}
+  class="flex w-fit items-center gap-2 rounded-lg px-3 py-2 hover:scale-105 hover:duration-300"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  {iconName && <Icon name={iconName} class="h-7 select-none" />}
+  <span>{name}</span>
+</a>
