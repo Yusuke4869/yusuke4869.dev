@@ -1,0 +1,63 @@
+---
+import { Icon } from "astro-icon";
+import Layout from "~/layouts/Layout.astro";
+import { newtClient } from "~/lib/newt";
+import type { Post as PostContentType } from "~/types/contents";
+
+interface Props {
+  post: PostContentType;
+}
+
+export const getStaticPaths = async () => {
+  const { items: postItems } = await newtClient.getContents<PostContentType>({
+    appUid: "blog",
+    modelUid: "article",
+    query: {
+      select: ["title", "slug", "tags", "body", "_sys"],
+    },
+  });
+  return postItems.map((post) => ({
+    params: { slug: post.slug },
+    props: { post },
+  }));
+};
+
+const { post } = Astro.props;
+
+const createdAt = new Date(post._sys.createdAt).toDateString();
+const updatedAt = new Date(post._sys.updatedAt).toDateString();
+---
+
+<Layout
+  title={post.title}
+  description={post.title}
+  imageUrl={`https://${import.meta.env.PUBLIC_OG_FQDN}/img/${post.title}?bg=https://${
+    import.meta.env.PUBLIC_OG_FQDN
+  }/blog.svg`}
+>
+  <h1 class="text-4xl font-bold">{post.title}</h1>
+  <div class="mb-6">
+    <div class="flex items-center gap-x-3">
+      <span class="text-sm">{createdAt}</span>
+      {createdAt !== updatedAt && <span class="text-sm">Updated: {updatedAt}</span>}
+    </div>
+    <div class="mt-2 flex flex-wrap items-center gap-x-3 gap-y-1">
+      {
+        post.tags.map((tag) => (
+          <div class="flex items-center gap-1 rounded-full bg-gray-200 px-3 py-1 text-sm font-semibold text-gray-700">
+            <span>#{tag.name}</span>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+  <article set:html={post.body} class="markdown my-4" />
+  <script>
+    const target = document.querySelector(".markdown");
+    const elements = target.getElementsByTagName("a");
+    for (const element of elements) {
+      element.setAttribute("target", "_blank");
+      element.setAttribute("rel", "noopener noreferrer");
+    }
+  </script>
+</Layout>
