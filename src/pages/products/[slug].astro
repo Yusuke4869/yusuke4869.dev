@@ -1,0 +1,88 @@
+---
+import { Icon } from "astro-icon";
+import Layout from "~/layouts/Layout.astro";
+import { newtClient } from "~/lib/newt";
+import type { Product as ProductContentType } from "~/types/contents";
+
+interface Props {
+  product: ProductContentType;
+}
+
+export const getStaticPaths = async () => {
+  const { items: productItems } = await newtClient.getContents<ProductContentType>({
+    appUid: "portfolio",
+    modelUid: "products",
+    query: {
+      select: ["name", "slug", "description", "url", "repository", "date", "skills", "contents"],
+    },
+  });
+  return productItems.map((product) => ({
+    params: { slug: product.slug },
+    props: { product },
+  }));
+};
+
+const { product } = Astro.props;
+---
+
+<Layout
+  title={product.name}
+  description={product.description}
+  imageUrl={`https://${import.meta.env.PUBLIC_OG_FQDN}/img/${product.name}?bg=https://${
+    import.meta.env.PUBLIC_OG_FQDN
+  }/product.svg`}
+>
+  <h1 class="text-4xl font-bold">{product.name}</h1>
+  <div class="mb-6">
+    <p>{product.date}</p>
+    <div class="mt-3 flex flex-wrap items-center gap-x-3 gap-y-1">
+      {
+        product.skills.map((skill) => (
+          <div class="flex items-center gap-1 rounded-full bg-gray-200 px-3 py-1 text-sm font-semibold text-gray-700">
+            {skill.iconName && <Icon name={skill.iconName} class="h-5" />}
+            <span>{skill.name}</span>
+          </div>
+        ))
+      }
+    </div>
+    <div class="mt-2 flex flex-wrap items-center gap-x-4 md:mt-1">
+      {
+        product.url && (
+          <a
+            href={product.url}
+            class="flex w-fit items-center rounded-lg p-1"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Icon name="el:website" class="h-5" />
+            <span class="ml-2 mr-1">{product.url}</span>
+            <Icon name="icomoon-free:new-tab" class="mt-1 h-3" />
+          </a>
+        )
+      }
+      {
+        product.repository && (
+          <a
+            href={`https://github.com/${product.repository}`}
+            class="flex w-fit items-center rounded-lg p-1"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Icon name="simple-icons:github" class="h-5" />
+            <span class="ml-2 mr-1">{product.repository}</span>
+            <Icon name="icomoon-free:new-tab" class="mt-1 h-3" />
+          </a>
+        )
+      }
+    </div>
+  </div>
+  <article set:html={product.contents} class="markdown my-4" />
+  <script>
+    const target = document.querySelector(".markdown");
+    const elements = target.getElementsByTagName("a");
+    for (const element of elements) {
+      element.setAttribute("target", "_blank");
+      element.setAttribute("rel", "noopener noreferrer");
+    }
+  </script>
+</Layout>

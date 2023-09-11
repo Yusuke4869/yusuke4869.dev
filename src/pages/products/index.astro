@@ -1,0 +1,31 @@
+---
+import Layout from "~/layouts/Layout.astro";
+import { newtClient } from "~/lib/newt";
+import type { Product as ProductContentType } from "~/types/contents";
+import Product from "~/components/Product.astro";
+
+const { items: productItems } = await newtClient.getContents<ProductContentType>({
+  appUid: "portfolio",
+  modelUid: "products",
+  query: {
+    select: ["name", "slug", "description"],
+  },
+});
+---
+
+<Layout
+  title="Products | Yusuke4869"
+  description="製作物一覧"
+  imageUrl={`https://${import.meta.env.PUBLIC_OG_FQDN}/img/製作物一覧?bg=https://${
+    import.meta.env.PUBLIC_OG_FQDN
+  }/product.svg`}
+>
+  <h1 class="text-3xl font-bold md:text-4xl">Products</h1>
+  <div class="my-4 md:ml-10">
+    {
+      productItems.map((product) => (
+        <Product name={product.name} slug={product.slug} description={product.description} />
+      ))
+    }
+  </div>
+</Layout>
