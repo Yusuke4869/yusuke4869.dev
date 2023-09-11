@@ -1,0 +1,24 @@
+---
+interface Props {
+  title: string;
+  slug: string;
+  tags: {
+    name: string;
+    slug: string;
+  }[];
+  createdAt: string;
+}
+
+const { title, slug, tags, createdAt } = Astro.props;
+---
+
+<a
+  href={`/posts/${slug}`}
+  class="my-2 flex w-fit min-w-[75%] flex-col justify-start rounded px-3 py-2 hover:scale-105 hover:duration-300"
+>
+  <span class="text-lg font-semibold">{title}</span>
+  <span class="mb-1 text-sm">{new Date(createdAt).toDateString()}</span>
+  <div class="flex gap-x-1">
+    {tags.map((tag) => <span class="rounded bg-gray-200 px-1.5 py-0.5 text-sm text-slate-900">#{tag.name}</span>)}
+  </div>
+</a>
