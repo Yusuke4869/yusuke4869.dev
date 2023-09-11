@@ -1,0 +1,15 @@
+---
+import ThemeToggleButton from "./ThemeToggleButton";
+---
+
+<header class="mx-2 mt-6">
+  <a href="/" class="ml-3 text-3xl font-semibold">Yusuke</a>
+  <div class="mb-4 mt-3 flex items-center justify-between border-b border-slate-500 pb-1 lg:mb-6">
+    <nav class="mx-2 flex gap-x-6">
+      <a href="/" class="hover:underline hover:underline-offset-2">Home</a>
+      <a href="/products" class="hover:underline hover:underline-offset-2">Products</a>
+      <a href="/posts" class="hover:underline hover:underline-offset-2">Posts</a>
+    </nav>
+    <ThemeToggleButton client:load />
+  </div>
+</header>
