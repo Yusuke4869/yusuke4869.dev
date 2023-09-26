@@ -26,13 +26,6 @@ const year = new Date().getFullYear();
   <body
     class="mx-auto flex min-h-screen max-w-screen-lg flex-col bg-slate-300 text-slate-900 dark:bg-slate-700 dark:text-slate-50"
   >
-    <Header />
-    <main class="mx-2 mx-auto w-11/12 flex-1 md:mx-5">
-      <slot />
-    </main>
-    <footer class="my-4">
-      <p class="text-center text-sm">Copyright © {year} Yusuke4869</p>
-    </footer>
     <script is:inline>
       if (
         localStorage.theme === "dark" ||
@@ -41,6 +34,13 @@ const year = new Date().getFullYear();
         document.documentElement.classList.add("dark");
       else document.documentElement.classList.remove("dark");
     </script>
+    <Header />
+    <main class="mx-2 mx-auto w-11/12 flex-1 md:mx-5">
+      <slot />
+    </main>
+    <footer class="my-4">
+      <p class="text-center text-sm">Copyright © {year} Yusuke4869</p>
+    </footer>
   </body>
 </html>
 <style is:global>
