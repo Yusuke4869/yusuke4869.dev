@@ -841,6 +841,42 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@iconify-json/el@npm:^1.1.8":
+  version: 1.1.8
+  resolution: "@iconify-json/el@npm:1.1.8"
+  dependencies:
+    "@iconify/types": "npm:*"
+  checksum: d2c8eb4b579b726033a29a007385f780562fca8a12340424ccc45843cb57b6a5e3d243fd31f6514684fe5ac96d680cbda48ea504ff5cbf05fab2d1207084adf8
+  languageName: node
+  linkType: hard
+
+"@iconify-json/ic@npm:^1.1.17":
+  version: 1.1.17
+  resolution: "@iconify-json/ic@npm:1.1.17"
+  dependencies:
+    "@iconify/types": "npm:*"
+  checksum: edbc8af203e00e966e53132238b3dc378584240f8836a5f0df1dcca823fed08c4735dbdf134b04f36f446044bbbc9933e7119d59e1868b4466cb14e965d85686
+  languageName: node
+  linkType: hard
+
+"@iconify-json/icomoon-free@npm:^1.1.8":
+  version: 1.1.8
+  resolution: "@iconify-json/icomoon-free@npm:1.1.8"
+  dependencies:
+    "@iconify/types": "npm:*"
+  checksum: 68828d2fb9c2c277d92d56759c09d08f78a80d2987b1527c22fec43578cde33ab4c8c3c891a238216c8aeca5e6cc213e531c9f33bbd566ff24aed8b96026d08c
+  languageName: node
+  linkType: hard
+
+"@iconify-json/simple-icons@npm:^1.1.86":
+  version: 1.1.86
+  resolution: "@iconify-json/simple-icons@npm:1.1.86"
+  dependencies:
+    "@iconify/types": "npm:*"
+  checksum: 579cad2f1e6afe17a97fd605b6607a1b0003c3aa120bab0a54e8860f1e0c4651c60c6c098c9230e38be0816ec70dcd071455f95fee1292a398a1722343b24a0a
+  languageName: node
+  linkType: hard
+
 "@iconify/tools@npm:^3.0.1":
   version: 3.0.7
   resolution: "@iconify/tools@npm:3.0.7"
@@ -859,7 +895,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@iconify/types@npm:^2.0.0":
+"@iconify/types@npm:*, @iconify/types@npm:^2.0.0":
   version: 2.0.0
   resolution: "@iconify/types@npm:2.0.0"
   checksum: 65a3be43500c7ccacf360e136d00e1717f050b7b91da644e94370256ac66f582d59212bdb30d00788aab4fc078262e91c95b805d1808d654b72f6d2072a7e4b2
@@ -8655,6 +8691,10 @@ __metadata:
   dependencies:
     "@astrojs/react": "npm:^3.0.0"
     "@astrojs/tailwind": "npm:^5.0.0"
+    "@iconify-json/el": "npm:^1.1.8"
+    "@iconify-json/ic": "npm:^1.1.17"
+    "@iconify-json/icomoon-free": "npm:^1.1.8"
+    "@iconify-json/simple-icons": "npm:^1.1.86"
     "@trivago/prettier-plugin-sort-imports": "npm:^4.2.0"
     "@types/react": "npm:^18.2.21"
     "@types/react-dom": "npm:^18.2.7"

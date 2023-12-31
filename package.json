@@ -27,6 +27,10 @@
   "dependencies": {
     "@astrojs/react": "^3.0.0",
     "@astrojs/tailwind": "^5.0.0",
+    "@iconify-json/el": "^1.1.8",
+    "@iconify-json/ic": "^1.1.17",
+    "@iconify-json/icomoon-free": "^1.1.8",
+    "@iconify-json/simple-icons": "^1.1.86",
     "astro": "^4.0.0",
     "astro-icon": "^1.0.0",
     "newt-client-js": "^3.2.6",
