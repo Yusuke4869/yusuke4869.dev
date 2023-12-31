@@ -79,10 +79,12 @@ const { product } = Astro.props;
   <article set:html={product.contents} class="markdown my-4" />
   <script>
     const target = document.querySelector(".markdown");
-    const elements = target.getElementsByTagName("a");
-    for (const element of elements) {
-      element.setAttribute("target", "_blank");
-      element.setAttribute("rel", "noopener noreferrer");
+    const elements = target?.getElementsByTagName("a");
+    if (elements) {
+      for (const element of elements) {
+        element.setAttribute("target", "_blank");
+        element.setAttribute("rel", "noopener noreferrer");
+      }
     }
   </script>
 </Layout>
