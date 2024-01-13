@@ -96,6 +96,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@astrojs/partytown@npm:^2.0.3":
+  version: 2.0.3
+  resolution: "@astrojs/partytown@npm:2.0.3"
+  dependencies:
+    "@builder.io/partytown": "npm:^0.8.0"
+    mrmime: "npm:^1.0.1"
+  checksum: aef8e6bf56023c858b0840eb44ec95df4c6981f0df4fd22ae097b02c25f4b79d2f7b46103f398b4a8cb803ef71c16a7113b51fa110fea2cc6ba05f144ebbec86
+  languageName: node
+  linkType: hard
+
 "@astrojs/prism@npm:^3.0.0":
   version: 3.0.0
   resolution: "@astrojs/prism@npm:3.0.0"
@@ -608,6 +618,15 @@ __metadata:
     "@babel/helper-validator-identifier": "npm:^7.22.20"
     to-fast-properties: "npm:^2.0.0"
   checksum: 7dd5e2f59828ed046ad0b06b039df2524a8b728d204affb4fc08da2502b9dd3140b1356b5166515d229dc811539a8b70dcd4bc507e06d62a89f4091a38d0b0fb
+  languageName: node
+  linkType: hard
+
+"@builder.io/partytown@npm:^0.8.0":
+  version: 0.8.2
+  resolution: "@builder.io/partytown@npm:0.8.2"
+  bin:
+    partytown: bin/partytown.cjs
+  checksum: b16e00b56b2329d6febfd455720127d1a48a7a3b104e89376aac9737bbc2c08553bfc0410125b013910b05f5d30ab8d722387eea7643765f1778165ccdaee900
   languageName: node
   linkType: hard
 
@@ -5880,6 +5899,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"mrmime@npm:^1.0.1":
+  version: 1.0.1
+  resolution: "mrmime@npm:1.0.1"
+  checksum: ab071441da76fd23b3b0d1823d77aacf8679d379a4a94cacd83e487d3d906763b277f3203a594c613602e31ab5209c26a8119b0477c4541ef8555b293a9db6d3
+  languageName: node
+  linkType: hard
+
 "ms@npm:2.0.0":
   version: 2.0.0
   resolution: "ms@npm:2.0.0"
@@ -8730,6 +8756,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "yusuke4869.dev@workspace:."
   dependencies:
+    "@astrojs/partytown": "npm:^2.0.3"
     "@astrojs/react": "npm:^3.0.0"
     "@astrojs/tailwind": "npm:^5.0.0"
     "@iconify-json/el": "npm:^1.1.8"
