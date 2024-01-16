@@ -5993,13 +5993,13 @@ __metadata:
   linkType: hard
 
 "newt-client-js@npm:^3.2.6":
-  version: 3.2.8
-  resolution: "newt-client-js@npm:3.2.8"
+  version: 3.3.0
+  resolution: "newt-client-js@npm:3.3.0"
   dependencies:
     axios: "npm:^1.6.0"
     axios-retry: "npm:^3.2.4"
     qs: "npm:^6.10.1"
-  checksum: 35f30130d968724fb01e46e68a1ddd20acb6a96013bbd9d63d55afa3d7d5012f19dfad5a7381cded01d2893f5123ffe4b67640d269bceb68be6a4368f0c1ff11
+  checksum: d28d051b2bed534d3d646910b28ad22374fab544c843819301e751237f3a59dd61cbe7d0fd0e8ce13c61de7ea358433aa1f9e99a3e9546cb4856a1dd60f9ae6d
   languageName: node
   linkType: hard
 
