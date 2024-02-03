@@ -1749,13 +1749,13 @@ __metadata:
   linkType: hard
 
 "astro-icon@npm:^1.0.0":
-  version: 1.0.4
-  resolution: "astro-icon@npm:1.0.4"
+  version: 1.1.0
+  resolution: "astro-icon@npm:1.1.0"
   dependencies:
     "@iconify/tools": "npm:^3.0.1"
     "@iconify/types": "npm:^2.0.0"
     "@iconify/utils": "npm:^2.1.5"
-  checksum: 10c0/1fb569e9cd59e7a879e7c8ce61cb95c1bb07d698ac5792d13bed2834deb88d63fca28ec3444c056bfe620a0e4e66e905547a276c8cc2a055290b490ade0639d8
+  checksum: 10c0/d60f088874da66b1c15f20681931c0d56ca614d35d10534344b0996017b14e0e4267a82f47f2361dd44118b5e19a5480209f7ded50d6783341c9c45e8e3eafc9
   languageName: node
   linkType: hard
 
