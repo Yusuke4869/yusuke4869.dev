@@ -823,11 +823,11 @@ __metadata:
   linkType: hard
 
 "@iconify-json/simple-icons@npm:^1.1.86":
-  version: 1.1.95
-  resolution: "@iconify-json/simple-icons@npm:1.1.95"
+  version: 1.1.96
+  resolution: "@iconify-json/simple-icons@npm:1.1.96"
   dependencies:
     "@iconify/types": "npm:*"
-  checksum: 10c0/c47a1b57d446bc32dd67e0b57873324fb2a92067a6d1465cb56ff6142734e00436e34b01a18b308357047e5bfaabd25afd2b1ff2c5c7571b5e0cd6d5aa58f061
+  checksum: 10c0/2664ac475dd3aa0b8eb071858b1ae53677e36d7c14e5084026be2ea65203493479d18b059fa1a2a2acb4437ae2d12533d48045a6e9e709dae34fd9ae6d603218
   languageName: node
   linkType: hard
 
