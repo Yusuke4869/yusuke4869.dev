@@ -974,11 +974,11 @@ __metadata:
   linkType: hard
 
 "@iconify-json/simple-icons@npm:^1.1.86":
-  version: 1.1.99
-  resolution: "@iconify-json/simple-icons@npm:1.1.99"
+  version: 1.1.100
+  resolution: "@iconify-json/simple-icons@npm:1.1.100"
   dependencies:
     "@iconify/types": "npm:*"
-  checksum: 10c0/f13ed49843d55ef75ff85b289bfbc7ad97edf237769ae5b5338bf26db5b9bb1e5a03329731707fc1c95eca84595d6ff4281fee1c180c5181def81ac7120c3884
+  checksum: 10c0/820e52e21cf9a8745f5e897ae0b75b5f884ee7656125c3daf259089fe41137959a2cee62a6ee708ec545322b27c7c192dffefe68c605d05af530c8ef6c68f46e
   languageName: node
   linkType: hard
 
