@@ -101,12 +101,12 @@ __metadata:
   linkType: hard
 
 "@astrojs/partytown@npm:^2.0.3":
-  version: 2.0.4
-  resolution: "@astrojs/partytown@npm:2.0.4"
+  version: 2.1.0
+  resolution: "@astrojs/partytown@npm:2.1.0"
   dependencies:
-    "@builder.io/partytown": "npm:^0.8.0"
-    mrmime: "npm:^1.0.1"
-  checksum: 10c0/4803711e5dba4ca6ba4f272757be56418929ecf031d7dab1750d51c06bc647b1c0eb2138b3464c7fbe1b55a0ec23d044fd26d2ce6d9cd93066bfdc0ceb4b36a6
+    "@builder.io/partytown": "npm:^0.10.1"
+    mrmime: "npm:^2.0.0"
+  checksum: 10c0/bf3d09b9ad04997a7431da4a99ca851f05690b30640ad0371bfd5b584631e211f3b03fa934ac61636b28999e33dffb3b5a98cab05e4fe5079566982336641bf3
   languageName: node
   linkType: hard
 
@@ -728,12 +728,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@builder.io/partytown@npm:^0.8.0":
-  version: 0.8.2
-  resolution: "@builder.io/partytown@npm:0.8.2"
+"@builder.io/partytown@npm:^0.10.1":
+  version: 0.10.1
+  resolution: "@builder.io/partytown@npm:0.10.1"
   bin:
     partytown: bin/partytown.cjs
-  checksum: 10c0/b16e00b56b2329d6febfd455720127d1a48a7a3b104e89376aac9737bbc2c08553bfc0410125b013910b05f5d30ab8d722387eea7643765f1778165ccdaee900
+  checksum: 10c0/1025d7ac6ed146d2a17971345d82c31f9d8b4468a775cf62b356ed5298e7a09ab6dbc462da783f16a25645ec9836d8b2ddd8fbc291467cb2c12c7c3b9b2df8f9
   languageName: node
   linkType: hard
 
@@ -6109,13 +6109,6 @@ __metadata:
   bin:
     mkdirp: bin/cmd.js
   checksum: 10c0/46ea0f3ffa8bc6a5bc0c7081ffc3907777f0ed6516888d40a518c5111f8366d97d2678911ad1a6882bf592fa9de6c784fea32e1687bb94e1f4944170af48a5cf
-  languageName: node
-  linkType: hard
-
-"mrmime@npm:^1.0.1":
-  version: 1.0.1
-  resolution: "mrmime@npm:1.0.1"
-  checksum: 10c0/ab071441da76fd23b3b0d1823d77aacf8679d379a4a94cacd83e487d3d906763b277f3203a594c613602e31ab5209c26a8119b0477c4541ef8555b293a9db6d3
   languageName: node
   linkType: hard
 
