@@ -1,15 +1,16 @@
 ---
+import Link from "~/components/Link.astro";
+import Post from "~/components/Post.astro";
+import Product from "~/components/Product.astro";
+import Qualification from "~/components/Qualification.astro";
 import Layout from "~/layouts/Layout.astro";
 import { newtClient } from "~/lib/newt";
+
 import type {
   AboutMe as AboutMeContentType,
   Product as ProductContentType,
   Post as PostContentType,
 } from "~/types/contents";
-import Product from "~/components/Product.astro";
-import Qualification from "~/components/Qualification.astro";
-import Link from "~/components/Link.astro";
-import Post from "~/components/Post.astro";
 
 const { items: aboutMeItems } = await newtClient.getContents<AboutMeContentType>({
   appUid: "portfolio",
