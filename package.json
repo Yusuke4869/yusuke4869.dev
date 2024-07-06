@@ -1,13 +1,12 @@
 {
   "name": "yusuke4869.dev",
   "type": "module",
-  "version": "0.0.1",
   "scripts": {
+    "astro": "astro",
     "dev": "astro dev",
     "start": "astro preview",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro",
     "lint": "eslint ./src/**/*",
     "lint:fix": "eslint --fix ./src/**/*",
     "format": "prettier --write .",
