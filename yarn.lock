@@ -2208,8 +2208,8 @@ __metadata:
   linkType: hard
 
 "astro@npm:^4.0.0":
-  version: 4.13.0
-  resolution: "astro@npm:4.13.0"
+  version: 4.13.1
+  resolution: "astro@npm:4.13.1"
   dependencies:
     "@astrojs/compiler": "npm:^2.10.0"
     "@astrojs/internal-helpers": "npm:0.4.1"
@@ -2227,7 +2227,6 @@ __metadata:
     aria-query: "npm:^5.3.0"
     axobject-query: "npm:^4.1.0"
     boxen: "npm:7.1.1"
-    chokidar: "npm:^3.6.0"
     ci-info: "npm:^4.0.0"
     clsx: "npm:^2.1.1"
     common-ancestor-path: "npm:^1.0.1"
@@ -2279,7 +2278,7 @@ __metadata:
       optional: true
   bin:
     astro: astro.js
-  checksum: 10c0/d79f2563063bbd36884d341a1e380ef399a79af89d86a457db5d1e9737f6157f77c4be5deab65457456cdff2eadb5c691b6f02df6d738093144d1111ea65c9ba
+  checksum: 10c0/7f7df725a5459e5106ee62a89bd260ad4d23f5fd9d77930a8ca4b8d9e2686eae02f8a431b5e93ff3180bee4cf519be7b25f22b1664c0123551c02d6dc91c32a1
   languageName: node
   linkType: hard
 
@@ -2706,25 +2705,6 @@ __metadata:
     fsevents:
       optional: true
   checksum: 10c0/1076953093e0707c882a92c66c0f56ba6187831aa51bb4de878c1fec59ae611a3bf02898f190efec8e77a086b8df61c2b2a3ea324642a0558bdf8ee6c5dc9ca1
-  languageName: node
-  linkType: hard
-
-"chokidar@npm:^3.6.0":
-  version: 3.6.0
-  resolution: "chokidar@npm:3.6.0"
-  dependencies:
-    anymatch: "npm:~3.1.2"
-    braces: "npm:~3.0.2"
-    fsevents: "npm:~2.3.2"
-    glob-parent: "npm:~5.1.2"
-    is-binary-path: "npm:~2.1.0"
-    is-glob: "npm:~4.0.1"
-    normalize-path: "npm:~3.0.0"
-    readdirp: "npm:~3.6.0"
-  dependenciesMeta:
-    fsevents:
-      optional: true
-  checksum: 10c0/8361dcd013f2ddbe260eacb1f3cb2f2c6f2b0ad118708a343a5ed8158941a39cb8fb1d272e0f389712e74ee90ce8ba864eece9e0e62b9705cb468a2f6d917462
   languageName: node
   linkType: hard
 
