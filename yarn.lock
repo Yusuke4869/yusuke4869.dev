@@ -919,11 +919,11 @@ __metadata:
   linkType: hard
 
 "@iconify-json/icomoon-free@npm:^1.1.8":
-  version: 1.1.8
-  resolution: "@iconify-json/icomoon-free@npm:1.1.8"
+  version: 1.1.9
+  resolution: "@iconify-json/icomoon-free@npm:1.1.9"
   dependencies:
     "@iconify/types": "npm:*"
-  checksum: 10c0/68828d2fb9c2c277d92d56759c09d08f78a80d2987b1527c22fec43578cde33ab4c8c3c891a238216c8aeca5e6cc213e531c9f33bbd566ff24aed8b96026d08c
+  checksum: 10c0/17a73fcade126f6d3c21de1c3f3c0190281a1e629a727ab035244f2d432699729b42a4c7b181c1a2f593a42e9912afdbb1001a06dc1a3a14ab7d65a8e43b46fd
   languageName: node
   linkType: hard
 
