@@ -21,7 +21,7 @@
   },
   "packageManager": "yarn@4.4.0",
   "volta": {
-    "node": "20.16.0"
+    "node": "20.17.0"
   },
   "dependencies": {
     "@astrojs/partytown": "^2.0.3",
