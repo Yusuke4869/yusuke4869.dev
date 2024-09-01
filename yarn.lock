@@ -923,11 +923,11 @@ __metadata:
   linkType: hard
 
 "@iconify-json/el@npm:^1.1.8":
-  version: 1.1.9
-  resolution: "@iconify-json/el@npm:1.1.9"
+  version: 1.2.0
+  resolution: "@iconify-json/el@npm:1.2.0"
   dependencies:
     "@iconify/types": "npm:*"
-  checksum: 10c0/3b2b56bc8faf8bcac3a9fb2f80b8b775acd7521aa78f7e60bd6d5f78db2a51846e7607dd20afcbc3833e23c899aa54f8ee97eeaaff1fdd9cad3e60602dc66f50
+  checksum: 10c0/52181e4bf292241197b0cfefd687e78da89d02c157a879b2d906d2212fd21472716c829dfd6256296cb4444ecd6e741982ff79cdf1103ee86e1498bf66acd59e
   languageName: node
   linkType: hard
 
