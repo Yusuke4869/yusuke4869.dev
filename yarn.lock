@@ -961,11 +961,11 @@ __metadata:
   linkType: hard
 
 "@iconify-json/simple-icons@npm:^1.1.86":
-  version: 1.2.5
-  resolution: "@iconify-json/simple-icons@npm:1.2.5"
+  version: 1.2.6
+  resolution: "@iconify-json/simple-icons@npm:1.2.6"
   dependencies:
     "@iconify/types": "npm:*"
-  checksum: 10c0/074df8cdedb6162d0e4372decbfb0139399a79e923ce6fd47ba66ff549d9372d28c71c4440a70d945e662762acb57fe0e06fb9565a51aedc7da9b39a25af50da
+  checksum: 10c0/4c9e02fcb61676c5a1af0b44b3291bed0c68aedb955f6bb7c4b16c8a8d372d6cbe9ec314543b5426ef9d58a4b331d91ad04c4dad7f7447b90dd9512581713e26
   languageName: node
   linkType: hard
 
