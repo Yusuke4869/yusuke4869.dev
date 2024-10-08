@@ -988,11 +988,11 @@ __metadata:
   linkType: hard
 
 "@iconify-json/ic@npm:^1.1.17":
-  version: 1.2.0
-  resolution: "@iconify-json/ic@npm:1.2.0"
+  version: 1.2.1
+  resolution: "@iconify-json/ic@npm:1.2.1"
   dependencies:
     "@iconify/types": "npm:*"
-  checksum: 10c0/b9964126d7cc7d580a49b3fc6f705f38f755b14cc3af2598f95967d37084543ce9cbdc80394f13494fb18711d053da3c14c66e816b4400926d1a75b472359daf
+  checksum: 10c0/1a82316c8b29d5fa3f2ddae5942f9786029eb748d02e1f42d380addbb3ec2c4930948fe7febc760b39dfc843b9f061ba8616374556da5a701947fb2e68cbbeaf
   languageName: node
   linkType: hard
 
