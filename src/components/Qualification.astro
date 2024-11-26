@@ -4,10 +4,10 @@ interface Props {
   date: string;
 }
 
-const { name, date } = Astro.props;
+const { name: qualificationName, date } = Astro.props;
 ---
 
 <li>
-  <span class="mr-2">{name}</span>
+  <span class="mr-2">{qualificationName}</span>
   <span>{date}</span>
 </li>
