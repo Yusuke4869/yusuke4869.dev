@@ -41,9 +41,7 @@ const { items: postItems } = await newtClient.getContents<PostContentType>({
 <Layout
   title="Home | Yusuke4869"
   description="Yusuke4869のポートフォリオ"
-  imageUrl={`https://${import.meta.env.PUBLIC_OG_FQDN}/img/ポートフォリオ?bg=https://${
-    import.meta.env.PUBLIC_OG_FQDN
-  }/product.svg`}
+  imageUrl={`https://${import.meta.env.PUBLIC_OG_FQDN}/img/${encodeURIComponent("ポートフォリオ")}?bg=https://${import.meta.env.PUBLIC_OG_FQDN}/product.svg`}
 >
   <div class="mb-6">
     <h2 class="text-2xl font-medium">About me</h2>

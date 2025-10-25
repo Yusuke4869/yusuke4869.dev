@@ -31,9 +31,7 @@ const updatedAt = new Date(post._sys.updatedAt).toDateString();
 <Layout
   title={post.title}
   description={post.title}
-  imageUrl={`https://${import.meta.env.PUBLIC_OG_FQDN}/img/${post.title}?bg=https://${
-    import.meta.env.PUBLIC_OG_FQDN
-  }/blog.svg`}
+  imageUrl={`https://${import.meta.env.PUBLIC_OG_FQDN}/img/${encodeURIComponent(post.title)}?bg=https://${import.meta.env.PUBLIC_OG_FQDN}/blog.svg`}
 >
   <h1 class="text-3xl font-bold">{post.title}</h1>
   <div class="mb-6">
