@@ -17,9 +17,7 @@ const { items: productItems } = await newtClient.getContents<ProductContentType>
 <Layout
   title="Products | Yusuke4869"
   description="製作物一覧"
-  imageUrl={`https://${import.meta.env.PUBLIC_OG_FQDN}/img/製作物一覧?bg=https://${
-    import.meta.env.PUBLIC_OG_FQDN
-  }/product.svg`}
+  imageUrl={`https://${import.meta.env.PUBLIC_OG_FQDN}/img/${encodeURIComponent("製作物一覧")}?bg=https://${import.meta.env.PUBLIC_OG_FQDN}/product.svg`}
 >
   <h1 class="text-3xl font-bold md:text-4xl">Products</h1>
   <div class="my-4 md:ml-10">
