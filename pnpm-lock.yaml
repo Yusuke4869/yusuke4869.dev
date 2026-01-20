@@ -37,7 +37,7 @@ importers:
         version: 1.1.5
       newt-client-js:
         specifier: ^3.2.6
-        version: 3.3.11
+        version: 3.3.12
       react:
         specifier: ^19.0.0
         version: 19.2.3
@@ -215,8 +215,8 @@ packages:
     peerDependencies:
       '@babel/core': ^7.0.0-0
 
-  '@babel/runtime@7.28.4':
-    resolution: {integrity: sha512-Q/N6JNWvIvPnLDvjlE1OUBLPQHH6l3CltCEsHIujp45zQUSSh8K+gHnaEX45yAT1nyngnINhvWtzN+Nb9D8RAQ==}
+  '@babel/runtime@7.28.6':
+    resolution: {integrity: sha512-05WQkdpL9COIMz4LjTxGpPNCdlpyimKppYNoJ5Di5EUObifl8t4tuLuUBBZEpoLYOmfvIWrsp9fCl0HoPRVTdA==}
     engines: {node: '>=6.9.0'}
 
   '@babel/template@7.27.2':
@@ -2681,8 +2681,8 @@ packages:
     resolution: {integrity: sha512-Z4SmBUweYa09+o6pG+eASabEpP6QkQ70yHj351pQoEXIs8uHbaU2DWVmzBANKgflPa47A50PtB2+NgRpQvr7vA==}
     engines: {node: '>= 10'}
 
-  newt-client-js@3.3.11:
-    resolution: {integrity: sha512-D/2Damh75KPKX2RjACPcyz9V7TSkc+wx52zk2w9JMZpwxEfa6jgf6ZWH6EgrDA37Sl0CG2Yr62Vr21xfrK4udg==}
+  newt-client-js@3.3.12:
+    resolution: {integrity: sha512-895JOxp6cUgR683KkCXMcLydoL2UlxyIoBa0gSJxZFSQR4DyEhpiYfft4CXqyXgfByk93CS3WwjInseTprIZZQ==}
     engines: {node: '>=14'}
 
   nlcst-to-string@4.0.0:
@@ -3021,8 +3021,8 @@ packages:
     resolution: {integrity: sha512-vYt7UD1U9Wg6138shLtLOvdAu+8DsC/ilFtEVHcH+wydcSpNE20AfSOduf6MkRFahL5FY7X1oU7nKVZFtfq8Fg==}
     engines: {node: '>=6'}
 
-  qs@6.14.0:
-    resolution: {integrity: sha512-YWWTjgABSKcvs/nWBi9PycY/JiPJqOD4JA6o9Sej2AtvSGarXxKC3OQSk4pAarbdQlKAh5D4FCQkJNkW+GAn3w==}
+  qs@6.14.1:
+    resolution: {integrity: sha512-4EK3+xJl8Ts67nLYNwqw/dsFVnCf+qR7RgXSK9jEEm9unao3njwMDdmsdvoKBKHzxd7tCYz5e5M+SnMjdtXGQQ==}
     engines: {node: '>=0.6'}
 
   quansync@0.2.11:
@@ -3959,7 +3959,7 @@ snapshots:
       '@babel/core': 7.28.5
       '@babel/helper-plugin-utils': 7.27.1
 
-  '@babel/runtime@7.28.4': {}
+  '@babel/runtime@7.28.6': {}
 
   '@babel/template@7.27.2':
     dependencies:
@@ -4980,7 +4980,7 @@ snapshots:
 
   axios-retry@3.9.1:
     dependencies:
-      '@babel/runtime': 7.28.4
+      '@babel/runtime': 7.28.6
       is-retry-allowed: 2.2.0
 
   axios@1.13.2:
@@ -6871,11 +6871,11 @@ snapshots:
 
   neotraverse@0.6.18: {}
 
-  newt-client-js@3.3.11:
+  newt-client-js@3.3.12:
     dependencies:
       axios: 1.13.2
       axios-retry: 3.9.1
-      qs: 6.14.0
+      qs: 6.14.1
     transitivePeerDependencies:
       - debug
 
@@ -7151,7 +7151,7 @@ snapshots:
 
   punycode@2.3.1: {}
 
-  qs@6.14.0:
+  qs@6.14.1:
     dependencies:
       side-channel: 1.1.0
 
