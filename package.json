@@ -13,9 +13,6 @@
     "fmt:check": "prettier --check ."
   },
   "packageManager": "pnpm@10.29.1+sha512.48dae233635a645768a3028d19545cacc1688639eeb1f3734e42d6d6b971afbf22aa1ac9af52a173d9c3a20c15857cfa400f19994d79a2f626fcc73fccda9bbc",
-  "volta": {
-    "node": "24.13.0"
-  },
   "dependencies": {
     "@astrojs/partytown": "^2.0.3",
     "@astrojs/react": "^4.0.0",
