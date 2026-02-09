@@ -6,37 +6,35 @@ import type { FC } from "react";
 
 type Theme = "light" | "dark";
 
+const getInitialTheme = (): Theme => {
+  if (typeof window === "undefined") return "light";
+
+  const savedTheme = localStorage.getItem("theme");
+  if (savedTheme === "dark" || savedTheme === "light") return savedTheme;
+
+  // テーマが設定されていない場合、システムのテーマに合わせる
+  return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+};
+
 const ThemeToggleButton: FC = () => {
-  const [theme, setTheme] = useState<Theme | undefined>(undefined);
+  const [theme, setTheme] = useState<Theme>(getInitialTheme);
 
   useEffect(() => {
-    const savedTheme = localStorage.getItem("theme");
-
-    if (
-      savedTheme === "dark" ||
-      // テーマが設定されていない場合、システムのテーマに合わせる
-      (typeof savedTheme !== "string" && window.matchMedia("(prefers-color-scheme: dark)").matches)
-    )
-      setTheme("dark");
-    else setTheme("light");
-  }, []);
+    if (typeof document === "undefined") return;
+    if (theme === "dark") document.documentElement.classList.add("dark");
+    else document.documentElement.classList.remove("dark");
+  }, [theme]);
 
   const toggleTheme = () => {
-    if (theme === "dark") {
-      setTheme("light");
-      document.documentElement.classList.remove("dark");
-      localStorage.setItem("theme", "light");
-    }
-
-    if (theme === "light") {
-      setTheme("dark");
-      document.documentElement.classList.add("dark");
-      localStorage.setItem("theme", "dark");
-    }
+    setTheme((currentTheme) => {
+      const nextTheme = currentTheme === "dark" ? "light" : "dark";
+      localStorage.setItem("theme", nextTheme);
+      return nextTheme;
+    });
   };
 
   return (
-    <button type="button" onClick={toggleTheme} className="rounded-full p-2 text-2xl" aria-label="テーマを切り替える">
+    <button aria-label="テーマを切り替える" className="rounded-full p-2 text-2xl" onClick={toggleTheme} type="button">
       {theme === "dark" ? <LightIcon /> : <DarkIcon />}
     </button>
   );
