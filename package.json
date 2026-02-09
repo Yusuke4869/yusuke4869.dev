@@ -7,8 +7,8 @@
     "start": "astro preview",
     "build": "astro build",
     "preview": "astro preview",
-    "lint": "tsc --noEmit && eslint --fix ./src/**/* && prettier --write .",
-    "lint:check": "tsc --noEmit && eslint ./src/**/*",
+    "lint": "tsc --noEmit && eslint --fix && prettier --write .",
+    "lint:check": "tsc --noEmit && eslint",
     "fmt": "prettier --write .",
     "fmt:check": "prettier --check .",
     "check": "tsc --noEmit && eslint && prettier --check ."
@@ -30,9 +30,9 @@
     "tailwindcss": "^3.0.24"
   },
   "devDependencies": {
+    "@eslint/js": "^9.39.2",
     "@types/react": "^19.0.0",
     "@types/react-dom": "^19.0.0",
-    "@typescript-eslint/eslint-plugin": "^8.0.0",
     "@typescript-eslint/parser": "^8.0.0",
     "eslint": "^9.39.2",
     "eslint-config-prettier": "^10.0.0",
@@ -40,10 +40,13 @@
     "eslint-plugin-astro": "^1.0.0",
     "eslint-plugin-import": "^2.29.1",
     "eslint-plugin-jsx-a11y": "^6.7.1",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^7.0.1",
+    "eslint-plugin-tailwindcss": "^3.18.2",
     "lefthook": "^2.0.0",
     "prettier": "^3.0.2",
     "prettier-plugin-astro": "^0.14.0",
-    "prettier-plugin-tailwindcss": "^0.7.0",
-    "typescript": "^5.2.2"
+    "typescript": "^5.2.2",
+    "typescript-eslint": "^8.54.0"
   }
 }
