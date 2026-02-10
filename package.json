@@ -17,7 +17,6 @@
   "dependencies": {
     "@astrojs/partytown": "^2.0.3",
     "@astrojs/react": "^4.0.0",
-    "@astrojs/tailwind": "^6.0.0",
     "@iconify-json/el": "^1.1.8",
     "@iconify-json/ic": "^1.1.17",
     "@iconify-json/icomoon-free": "^1.1.8",
@@ -31,6 +30,7 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.39.2",
+    "@tailwindcss/vite": "^4.1.18",
     "@types/react": "^19.0.0",
     "@types/react-dom": "^19.0.0",
     "@typescript-eslint/parser": "^8.0.0",
