@@ -1,9 +1,9 @@
 ---
-import Product from "~/components/Product.astro";
-import Layout from "~/layouts/Layout.astro";
-import { newtClient } from "~/lib/newt";
+import Product from "../../components/Product.astro";
+import Layout from "../../layouts/Layout.astro";
+import { newtClient } from "../../lib/newt";
 
-import type { Product as ProductContentType } from "~/types/contents";
+import type { Product as ProductContentType } from "../../types/contents";
 
 const { items: productItems } = await newtClient.getContents<ProductContentType>({
   appUid: "portfolio",

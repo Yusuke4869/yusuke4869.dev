@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-import { LightIcon, DarkIcon } from "~/icons";
+import { LightIcon, DarkIcon } from "../icons";
 
 import type { FC } from "react";
 
