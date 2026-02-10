@@ -5,7 +5,6 @@ import pluginAstro from "eslint-plugin-astro";
 import pluginReact from "eslint-plugin-react";
 import pluginReactHooks from "eslint-plugin-react-hooks";
 import pluginImport from "eslint-plugin-import";
-import pluginTailwind from "eslint-plugin-tailwindcss";
 import prettier from "eslint-config-prettier";
 
 /** @type {import("eslint").Linter.Config[]} */
@@ -15,7 +14,6 @@ export default [
   },
   eslint.configs.recommended,
   ...pluginAstro.configs.recommended,
-  ...pluginTailwind.configs["flat/recommended"],
 
   // .astro ファイルがパースエラーになるのを防ぐ
   ...tseslint.configs.strictTypeChecked.map((config) => ({ ...config, files: ["**/*.{ts,tsx}"] })),
@@ -25,12 +23,6 @@ export default [
     rules: {
       "no-console": "warn",
       "prefer-template": "error",
-      "tailwindcss/no-custom-classname": [
-        "error",
-        {
-          whitelist: ["markdown"],
-        },
-      ],
     },
   },
   {
