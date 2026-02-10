@@ -1,9 +1,9 @@
 ---
-import Post from "~/components/Post.astro";
-import Layout from "~/layouts/Layout.astro";
-import { newtClient } from "~/lib/newt";
+import Post from "../../components/Post.astro";
+import Layout from "../../layouts/Layout.astro";
+import { newtClient } from "../../lib/newt";
 
-import type { Post as PostContentType } from "~/types/contents";
+import type { Post as PostContentType } from "../../types/contents";
 
 const { items: postItems } = await newtClient.getContents<PostContentType>({
   appUid: "blog",
