@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 import { LightIcon, DarkIcon } from "../icons";
 
@@ -6,35 +6,27 @@ import type { FC } from "react";
 
 type Theme = "light" | "dark";
 
-const getInitialTheme = (): Theme => {
-  if (typeof window === "undefined") return "light";
-
-  const savedTheme = localStorage.getItem("theme");
-  if (savedTheme === "dark" || savedTheme === "light") return savedTheme;
-
-  // テーマが設定されていない場合、システムのテーマに合わせる
-  return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
-};
+const getCurrentTheme = (): Theme => (document.documentElement.classList.contains("dark") ? "dark" : "light");
 
 const ThemeToggleButton: FC = () => {
-  const [theme, setTheme] = useState<Theme>(getInitialTheme);
-
-  useEffect(() => {
-    if (typeof document === "undefined") return;
-    if (theme === "dark") document.documentElement.classList.add("dark");
-    else document.documentElement.classList.remove("dark");
-  }, [theme]);
+  const [theme, setTheme] = useState<Theme>(getCurrentTheme);
 
   const toggleTheme = () => {
-    setTheme((currentTheme) => {
-      const nextTheme = currentTheme === "dark" ? "light" : "dark";
-      localStorage.setItem("theme", nextTheme);
-      return nextTheme;
-    });
+    const nextTheme = theme === "dark" ? "light" : "dark";
+
+    document.documentElement.classList.toggle("dark", nextTheme === "dark");
+    localStorage.setItem("theme", nextTheme);
+    setTheme(nextTheme);
   };
 
   return (
-    <button aria-label="テーマを切り替える" className="rounded-full p-2 text-2xl" onClick={toggleTheme} type="button">
+    <button
+      aria-label="テーマを切り替える"
+      aria-pressed={theme === "dark"}
+      className="cursor-pointer rounded-full p-2 text-2xl"
+      onClick={toggleTheme}
+      type="button"
+    >
       {theme === "dark" ? <LightIcon /> : <DarkIcon />}
     </button>
   );
