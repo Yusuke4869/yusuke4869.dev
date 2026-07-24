@@ -34,7 +34,7 @@ importers:
         version: 1.1.5
       newt-client-js:
         specifier: ^3.2.6
-        version: 3.3.18
+        version: 3.3.19
       react:
         specifier: ^19.0.0
         version: 19.2.7
@@ -2942,8 +2942,8 @@ packages:
     resolution: {integrity: sha512-Z4SmBUweYa09+o6pG+eASabEpP6QkQ70yHj351pQoEXIs8uHbaU2DWVmzBANKgflPa47A50PtB2+NgRpQvr7vA==}
     engines: {node: '>= 10'}
 
-  newt-client-js@3.3.18:
-    resolution: {integrity: sha512-ARtJ+cmelxstmlrczcCJNvgkbaxDA3VU3PYY+WckSdFKV5RiVimJvVuZveyCQWW/TvIVn8cj5oyHplGCw8BXlg==}
+  newt-client-js@3.3.19:
+    resolution: {integrity: sha512-2m/M0g4kOgHBTzw8eg155vTsMI4KyYpgfmMYg9kBK2HCQz/rOPYQEKHvW6boFD9Xrg1GoXmsfMOWb073i5/mrw==}
     engines: {node: '>=14'}
 
   nlcst-to-string@4.0.0:
@@ -7299,7 +7299,7 @@ snapshots:
 
   neotraverse@0.6.18: {}
 
-  newt-client-js@3.3.18:
+  newt-client-js@3.3.19:
     dependencies:
       axios: 1.18.1
       axios-retry: 3.9.1
