@@ -21,7 +21,7 @@
     "@iconify-json/ic": "^1.1.17",
     "@iconify-json/icomoon-free": "^1.1.8",
     "@iconify-json/simple-icons": "^1.1.86",
-    "astro": "^6.0.0",
+    "astro": "^7.0.0",
     "astro-icon": "^1.0.0",
     "newt-client-js": "^3.2.6",
     "react": "^19.0.0",
