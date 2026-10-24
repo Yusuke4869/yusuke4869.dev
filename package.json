@@ -16,7 +16,7 @@
   "packageManager": "pnpm@10.34.7+sha512.ba98abc585539933375b5971f4bc6d6c73a1b4b7edc4a879e7d102fe5423d1e02309d67c60a11f04955093a96e521ad9c3b138cdd654ca5be563f378b3ae48bd",
   "dependencies": {
     "@astrojs/partytown": "^2.0.3",
-    "@astrojs/react": "^5.0.0",
+    "@astrojs/react": "^7.0.0",
     "@iconify-json/el": "^1.1.8",
     "@iconify-json/ic": "^1.1.17",
     "@iconify-json/icomoon-free": "^1.1.8",
