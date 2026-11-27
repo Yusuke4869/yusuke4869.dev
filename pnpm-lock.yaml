@@ -25,7 +25,7 @@ importers:
         version: 1.2.1
       '@iconify-json/simple-icons':
         specifier: ^1.1.86
-        version: 1.2.103
+        version: 1.2.104
       astro:
         specifier: ^6.0.0
         version: 6.4.8(jiti@2.7.0)(lightningcss@1.33.0)(rollup@4.68.3)
@@ -627,8 +627,8 @@ packages:
   '@iconify-json/icomoon-free@1.2.1':
     resolution: {integrity: sha512-Me5L0/vH/LlhVr5R85TFah0LcJD7an6mv+5dagvXY/YnXQsOx3eB7GUioXheSoB8tObhvCuZFbvujMYKPKNWfw==}
 
-  '@iconify-json/simple-icons@1.2.103':
-    resolution: {integrity: sha512-FMn+aVTsqQdYOwf5reCXXtfWapb+4ijI6WrU8ej1spWXWfA+d41TBXcKagHFwiHZyqt7kP7F04AiG1dYj2R06w==}
+  '@iconify-json/simple-icons@1.2.104':
+    resolution: {integrity: sha512-WBozLa9oBsb6XuY+lnH7maIiYmabee0k276PvVVw+34oGAXNRnfJeilEOB4iQs2wFNU/8M/vQFVy66SHGJaDRw==}
 
   '@iconify/tools@5.0.14':
     resolution: {integrity: sha512-wJ4ZE3/HZh2iBqLwG+8FOMHe7CMJAJqwSXZSpPwMdj1gZM3Z4t2hbQMVw4Vm45oQ985qn0g89PUIcDEdKTheBA==}
@@ -2769,6 +2769,7 @@ packages:
   newt-client-js@3.3.21:
     resolution: {integrity: sha512-6tR7js4Bo4dQamWDYpXFNPIy27AzbBYOaw6woOzJJ9NAA323pAGrR1+Z59akCV0C+G8LRykn85I7aMIAxDm7AQ==}
     engines: {node: '>=14'}
+    deprecated: Newt service ended on 2026-11-24. This package no longer works.
 
   nlcst-to-string@4.0.0:
     resolution: {integrity: sha512-YKLBCcUYKAg0FNlOBT6aI91qFmSiFKiluk655WzPF+DDMA02qIyy8uiRqI8QXtcFpEvll12LpL5MXqEmAZ+dcA==}
@@ -4052,7 +4053,7 @@ snapshots:
     dependencies:
       '@iconify/types': 2.0.0
 
-  '@iconify-json/simple-icons@1.2.103':
+  '@iconify-json/simple-icons@1.2.104':
     dependencies:
       '@iconify/types': 2.0.0
 
